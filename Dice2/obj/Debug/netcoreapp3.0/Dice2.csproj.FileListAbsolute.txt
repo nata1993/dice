@@ -1,0 +1,11 @@
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\bin\Debug\netcoreapp3.0\Dice2.exe
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\bin\Debug\netcoreapp3.0\Dice2.deps.json
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\bin\Debug\netcoreapp3.0\Dice2.runtimeconfig.json
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\bin\Debug\netcoreapp3.0\Dice2.runtimeconfig.dev.json
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\bin\Debug\netcoreapp3.0\Dice2.dll
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\bin\Debug\netcoreapp3.0\Dice2.pdb
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\obj\Debug\netcoreapp3.0\Dice2.csprojAssemblyReference.cache
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\obj\Debug\netcoreapp3.0\Dice2.AssemblyInfoInputs.cache
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\obj\Debug\netcoreapp3.0\Dice2.AssemblyInfo.cs
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\obj\Debug\netcoreapp3.0\Dice2.dll
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\Dice2\obj\Debug\netcoreapp3.0\Dice2.pdb
