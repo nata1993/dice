@@ -224,15 +224,21 @@ namespace Dice2
                                 {
                                     userCash += 10;
                                     Console.WriteLine("IT IS EVEN");
-                                    if (rndGen1 == 6 && rndGen2 == 6)
+
+                                    if (rndGen1 == 6 && rndGen2 == 6) //full points
                                     {
                                         userCash += 50;
+                                    }
+
+                                    else if ((rndGen1 + rndGen2) == 6) //half points
+                                    {
+                                        userCash += 25;
                                     }
                                 }
 
                                 else
                                 {
-                                    userCash -= 10;
+                                    userCash -= 20;
                                     Console.WriteLine("IT IS ODD");
                                 }
                                 Console.WriteLine($"You now have {userCash} points.");
@@ -251,8 +257,13 @@ namespace Dice2
 
                                 else
                                 {
-                                    userCash -= 10;
+                                    userCash -= 20;
                                     Console.WriteLine("IT IS EVEN");
+
+                                    if ((rndGen1 + rndGen2) == 6) //half points
+                                    {
+                                        userCash -= 25;
+                                    }
                                 }
 
                                 Console.WriteLine($"You now have {userCash} points.");
