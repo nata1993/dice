@@ -234,13 +234,21 @@ namespace Dice2
                                     {
                                         userCash += 25;
                                     }
-                                }
+                                }                                
 
                                 else
                                 {
                                     userCash -= 20;
+
+                                    if (userCash <= 0)
+                                    {
+                                        diceRun1 = true;
+                                        Console.WriteLine("GAME OVER! YOU LOST!");
+                                    }
+
                                     Console.WriteLine("IT IS ODD");
                                 }
+
                                 Console.WriteLine($"You now have {userCash} points.");
                             }
 
@@ -253,11 +261,18 @@ namespace Dice2
                                 {
                                     userCash += 10;
                                     Console.WriteLine("IT IS ODD");
-                                }
+                                }                                
 
                                 else
                                 {
                                     userCash -= 20;
+
+                                    if (userCash <= 0)
+                                    {
+                                        diceRun1 = true;
+                                        Console.WriteLine("GAME OVER! YOU LOST!");
+                                    }
+
                                     Console.WriteLine("IT IS EVEN");
 
                                     if ((rndGen1 + rndGen2) == 6) //half points
