@@ -7,7 +7,7 @@ namespace Dice2
         static void Main()
         {
             string userChoice1; //asking if want to play or not
-            string userChoice2;
+            string userChoice2; //asking for odd/even/exit
 
             bool diceRun1 = false; //Loop for rolling dice
 
@@ -81,7 +81,7 @@ namespace Dice2
                         }
 
                         else
-                        {
+                        {                          
                             Random rndNr1 = new Random(); //Dice nr 1
                             rndGen1 = rndNr1.Next(1, 7);
 
@@ -216,8 +216,37 @@ namespace Dice2
                                     break;
                             }
 
-                            Console.WriteLine("\n");
-                            Console.WriteLine("Press Y to roll dice or N if you want to exit program TÜRA.");
+                            if (userChoice2.ToUpper() == "EVEN")
+                            {
+                                int a = (rndGen1 + rndGen2) % 2; //if sum of dice can be divided by 2, then its even
+                                Console.WriteLine("\n");
+
+                                if (a == 0)
+                                {
+                                    Console.WriteLine("IT IS EVEN");
+                                }
+
+                                else
+                                {
+                                    Console.WriteLine("IT IS ODD");
+                                }
+                            }
+
+                            else if (userChoice2.ToUpper() == "ODD")
+                            {
+                                int a = (rndGen1 + rndGen2) % 2; //if sum of dice can be divided by 2, then its even
+                                Console.WriteLine("\n");
+
+                                if (a != 0)
+                                {
+                                    Console.WriteLine("IT IS ODD");
+                                }
+
+                                else
+                                {
+                                    Console.WriteLine("IT IS EVEN");
+                                }
+                            }
                         }
                     }
                 }                
