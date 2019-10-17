@@ -8,9 +8,7 @@ namespace Dice2
         {
             string userChoice1; //asking if want to play or not
             string userChoice2; //asking for odd/even/exit
-
             bool diceRun1 = false; //Loop for rolling dice
-
             int rndGen1; //first dice
             int rndGen2; //second dice
             int userCash; //user inserted money
@@ -69,21 +67,22 @@ namespace Dice2
                             case "N":
                                 break;
                             default:
-                                Console.WriteLine("Insert ODD or EVEN. Press N to EXIT.");
                                 break;
                         }
 
                         if (userChoice2.ToUpper() == "N")
                         {
                             diceRun1 = true;
+                            Console.WriteLine("\n");                           
+                            Console.WriteLine($"Your cash after game is: {userCash}.");
                             Console.WriteLine("\n");
                             Console.WriteLine("Good bye!");
-                        }
+                        }                        
 
-                        else
+                        else if (userChoice2.ToUpper() == "ODD" || userChoice2.ToUpper() == "EVEN")
                         {                          
                             Random rndNr1 = new Random(); //Dice nr 1
-                            rndGen1 = rndNr1.Next(1, 7);
+                            rndGen1 = rndNr1.Next(1, 7);                            
 
                             switch (rndGen1)
                             {
@@ -223,29 +222,40 @@ namespace Dice2
 
                                 if (a == 0)
                                 {
+                                    userCash += 10;
                                     Console.WriteLine("IT IS EVEN");
+                                    if (rndGen1 == 6 && rndGen2 == 6)
+                                    {
+                                        userCash += 50;
+                                    }
                                 }
 
                                 else
                                 {
+                                    userCash -= 10;
                                     Console.WriteLine("IT IS ODD");
                                 }
+                                Console.WriteLine($"You now have {userCash} points.");
                             }
 
                             else if (userChoice2.ToUpper() == "ODD")
                             {
-                                int a = (rndGen1 + rndGen2) % 2; //if sum of dice can be divided by 2, then its even
+                                int a = (rndGen1 + rndGen2) % 2; //if sum of dice can not be divided by 2, then its ODD
                                 Console.WriteLine("\n");
 
                                 if (a != 0)
                                 {
+                                    userCash += 10;
                                     Console.WriteLine("IT IS ODD");
                                 }
 
                                 else
                                 {
+                                    userCash -= 10;
                                     Console.WriteLine("IT IS EVEN");
                                 }
+
+                                Console.WriteLine($"You now have {userCash} points.");
                             }
                         }
                     }
