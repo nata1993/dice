@@ -223,7 +223,7 @@ namespace Dice2
                                 if (a == 0)
                                 {
                                     userCash += 10;
-                                    Console.WriteLine("IT IS EVEN");
+                                    Console.WriteLine("You throwed EVEN");
 
                                     if (rndGen1 == 6 && rndGen2 == 6) //full points
                                     {
@@ -246,7 +246,7 @@ namespace Dice2
                                         Console.WriteLine("GAME OVER! YOU LOST!");
                                     }
 
-                                    Console.WriteLine("IT IS ODD");
+                                    Console.WriteLine("You throwed ODD");
                                 }
 
                                 Console.WriteLine($"You now have {userCash} points.");
@@ -260,7 +260,7 @@ namespace Dice2
                                 if (a != 0)
                                 {
                                     userCash += 10;
-                                    Console.WriteLine("IT IS ODD");
+                                    Console.WriteLine("You throwed ODD");
                                 }                                
 
                                 else
@@ -273,7 +273,7 @@ namespace Dice2
                                         Console.WriteLine("GAME OVER! YOU LOST!");
                                     }
 
-                                    Console.WriteLine("IT IS EVEN");
+                                    Console.WriteLine("You throwed EVEN");
 
                                     if ((rndGen1 + rndGen2) == 6) //half points
                                     {

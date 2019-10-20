@@ -1,0 +1,11 @@
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\bin\Debug\netcoreapp3.0\DiceWithFunction.exe
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\bin\Debug\netcoreapp3.0\DiceWithFunction.deps.json
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\bin\Debug\netcoreapp3.0\DiceWithFunction.runtimeconfig.json
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\bin\Debug\netcoreapp3.0\DiceWithFunction.runtimeconfig.dev.json
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\bin\Debug\netcoreapp3.0\DiceWithFunction.dll
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\bin\Debug\netcoreapp3.0\DiceWithFunction.pdb
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\obj\Debug\netcoreapp3.0\DiceWithFunction.csprojAssemblyReference.cache
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\obj\Debug\netcoreapp3.0\DiceWithFunction.AssemblyInfoInputs.cache
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\obj\Debug\netcoreapp3.0\DiceWithFunction.AssemblyInfo.cs
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\obj\Debug\netcoreapp3.0\DiceWithFunction.dll
+C:\Users\Kebo\Desktop\Kool\programmeerimine\dice\DiceWithFunction\obj\Debug\netcoreapp3.0\DiceWithFunction.pdb
