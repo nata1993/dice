@@ -8,23 +8,31 @@ namespace DiceWithFunction
         {
             bool diceRun1 = false;
 
-            int userCash;
-            string userChoice1; //asking if want to play or not
+            int userCash = 0;
 
             Console.WriteLine("Hello! This is \"DICE\". This program rolls dice for you just like you would roll them in Casino.");
             Console.WriteLine("Lets roll the dice!");
             Console.WriteLine("\n");
             Console.WriteLine("Press Y to roll dice or N if you want to exit program.");
 
-            while (!diceRun1) //game on or off
-            {
-                userChoice1 = Console.ReadLine();
+            UserInput();
+            CashInput(userCash);
 
+        }
+        public static void UserInput()
+        {
+            bool choice = false;
+            string userChoice1 = Console.ReadLine();
+
+            while (!choice)
+            {
                 switch (userChoice1.ToUpper()) //checking for correct user input
                 {
                     case "Y":
+                        choice = true;
                         break;
                     case "N":
+                        choice = true;
                         break;
                     default:
                         Console.WriteLine("Insert Y or N.");
@@ -33,24 +41,24 @@ namespace DiceWithFunction
 
                 if (userChoice1.ToUpper() == "N") //exit if N
                 {
-                    diceRun1 = true;
-                    Exit();
+                    Console.WriteLine("\n");
+                    Console.WriteLine("Good bye!");
                 }
 
                 else if (userChoice1.ToUpper() == "Y") //roll dice if Y
                 {
-                    Play(diceRun1);
+
                 }
             }
         }
 
-        public static void Exit()
+        public static int CashInput(int Cash)
         {
-            Console.WriteLine("\n");
-            Console.WriteLine("Good bye!");
+            int cash = int.Parse(Console.ReadLine());
+            return cash;
         }
 
-        public static void Play(bool diceRun1)
+        /*public static void Play(bool diceRun1)
         {
             CashAgain:
             Console.WriteLine("\n");
@@ -295,6 +303,6 @@ namespace DiceWithFunction
                     }
                 }
             }
-        }
+        }*/
     }
 }
